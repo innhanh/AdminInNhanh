@@ -1,0 +1,30 @@
+@import "../../../../style/variable";
+@import "../../../../style/mixin";
+#overviews {
+    .thongke {
+        width: 100%;
+        padding: 20px 100px;
+        border-radius: 10px;
+        background-color: $blue700;
+        .thongke_item {
+            i {
+                @include iconStyle(30px, 700, white, 70px, 70px, rgb(187, 103, 8));
+            }
+            h1 {
+                @include textStyle(80px, 700, white);
+                margin: 0;
+            }
+            h2 {
+                @include textStyle(40px, 700, white);
+                margin: 0;
+            }
+        }
+    }
+    .chart {
+        margin: 20px auto;
+        width: 100%;
+        padding: 30px;
+        border-radius: 10px;
+        background-color: $blue700;
+    }
+}

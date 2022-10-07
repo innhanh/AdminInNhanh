@@ -1,0 +1,89 @@
+#authen {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../../access/image/BgrLogin.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(22, 27, 172, 0.767);
+    }
+    .login-content {
+        padding: 3vw;
+        width: 40vw;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.562);
+        border-bottom-left-radius: 30px;
+        border-top-right-radius: 30px;
+       .logo{
+        width: 100%;
+        margin: 0 auto 20px auto ;
+        text-align: center;
+        img{
+            width: 35%;
+            margin: 0 auto;
+        }
+        p{
+            font-size: 16px;
+            letter-spacing: 3px;
+            color: rgb(13, 0, 134);
+            font-style: italic;          
+        }
+       }
+        .authen_item {
+            .input-form {
+                width: 100%;
+                margin: 10px auto;
+                border: 1px solid white;
+                border-radius: 10px;
+                input {
+                    padding: 5px 10px;
+                    background-color: transparent !important;
+                    border: none;
+                    width: 80%;
+                    outline: none;
+                    border-radius: 5px;
+                   
+                }
+                i {
+                    margin: 5px 10px;
+                    padding: 0;
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    border: 1px solid rgb(255, 255, 255);
+                    text-align: center;
+                    line-height: 28px;
+                    font-size: 18px;
+                    color: white;
+                }
+            }
+            .input-btn{
+                width: 80%;
+                margin: 30px auto 20px auto;
+                text-align: right;
+                align-items: center;
+                a{
+                    margin-right: 30px;
+                }
+                button{
+                  border: 1px solid white;
+                  padding: 5px 25px;
+                  font-size: 18px;
+                  color: white;
+                }
+            }
+        }
+        
+    }
+}

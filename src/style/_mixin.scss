@@ -1,0 +1,17 @@
+@mixin textStyle($fs, $fw, $cl) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $cl;
+}
+
+@mixin iconStyle($fs, $fw, $cl, $w, $h, $clb) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $cl;
+    width: $w;
+    height: $h;
+    border-radius: 50%;
+    border: 3px solid $clb;
+    text-align: center;
+    line-height: $w;
+}

@@ -1,0 +1,90 @@
+@import "../../style/variable";
+@import "../../style/mixin";
+#dashboard {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgb(4, 4, 77);
+    color: white;
+    text-align: center;
+    .dashboard_controller {
+        background-color: $blue700;
+        width: 20vw;
+        height: 100vh;
+        padding: 0 20px;
+        .admin {
+            border-bottom: 1px solid white;
+            margin: 20px;
+            img {
+                width: 100px;
+                height: 100px;
+                padding: 2%;
+                border-radius: 50%;
+                border: 3px solid white;
+                overflow: hidden;
+            }
+            p {
+                padding: 0;
+                margin: 0;
+            }
+        }
+        .innhanh_controller {
+            text-align: left;
+            .btn_innhanh {
+                @include textStyle(18px, 400, white);
+                text-align: left;
+                width: 100%;
+                border: 1px solid white;
+                background-color: transparent;               
+                padding: 10px 20px;
+                transition: 0.5s;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &:hover {
+                    background-color:$blueDark;
+                }
+                i{
+                 text-align: right;
+                }
+            }
+            #Systems {
+                width: 100%;
+                button {
+                    padding-left: 40px;
+                }
+            }
+        }
+    }
+    .dashboard_main {
+        width: 80vw;
+        height: auto;
+        background-color: $blueDark;
+        .dashboard_top {
+            text-align: left;
+            background-color: #fff;
+            .dashboard_top-title {
+                display: flex;
+                align-items: center;
+                button {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 5px;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                    margin-right: 20px;
+                }
+                p {
+                    @include textStyle($fs20, 400, $dark500);                  
+                    margin: 0;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+        .dashboard_views {           
+            padding:30px;          
+        }
+    }
+}
